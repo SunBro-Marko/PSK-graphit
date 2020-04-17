@@ -1,0 +1,156 @@
+/*Основные стили текста и заголовков*/
+p li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+p{
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+li.bold{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+h2.TextCenter{
+    text-align: center;
+}
+
+.SliderText>p{
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.SliderText>h1{
+    font-size: 22px;
+    font-family: Roboto;
+    padding-bottom: 5px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Стили ссылок*/
+.navlink{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navlink:hover{
+    color:grey;
+}
+
+.NavLogoLink{
+    text-decoration: none;
+    color: white;
+    vertical-align:middle;    
+}
+
+.NavLogoLink>p{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*Стили картинок*/
+
+.Label>img{
+    align-self: center;
+    display: block; 
+    max-height: auto;
+    max-height: 110px;
+    max-width: 100%; 
+}
+
+.Achivement>img{
+    align-self: center;
+    display: block; 
+    max-width: 100%; 
+    border-radius: 5px;
+    width: 128px;
+    height: 128px;
+}
+
+.img{
+    align-self: center;
+    display: block; 
+    max-width: 100%;     
+    border-radius: 5px;
+}
+
+
+
+.Achivement{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: Auto minmax(30px,50px) 1fr;
+    justify-items: center;
+    
+}
+
+
+.Achivement>h1{
+    text-align: center;
+}
+
+.Achivement>p{
+    font-family: Oswald;
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/*Прочие стили*/
+
+.X-Pad10{
+    padding: 10px 15px;
+}
+.top-Pad25px{
+    padding-top: 25px;
+}
+
+.bot-Pad25px{
+    padding-bottom: 25px;
+}
+
+.Achivements ul, .tab_container ul{
+    padding: 0 30px;
+    max-width: 100%;
+}
+
+.FotMenu .NavElement{
+    justify-self: start;
+}
+
+.form-group>input{
+    font-size: 16px;
+    border-radius:5px;
+    padding: 8px;
+}
+
+.form-group>textarea{
+    height: 80px;
+
+}

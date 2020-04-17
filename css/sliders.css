@@ -1,0 +1,187 @@
+
+.HeadSlider .slick-list {
+    overflow: hidden;
+}
+
+.HeadSlider .slick-track{
+    display: flex;
+}
+
+.HeadSlider{
+    position: relative;
+}
+
+.SliderItem{
+    position: relative;
+}
+
+.SliderTextContainer{
+    position: absolute;
+    z-index: 15;
+    bottom: 15%;
+    min-width: 100%;
+    
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    justify-content: center;
+}
+
+.SliderText{
+    grid-column: 2/3;
+    padding: 5px;
+    border-radius:5px;
+    background: #000000b0;
+    color: white;
+    text-align: center;
+}
+
+.SliderItem>img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.HeadSlider .slick-arrow{
+    
+    position: absolute;
+    text-decoration: none;
+    border: 0ch;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 60px;
+    margin: -30px 0px 0px 0px;
+}
+/* Стрелка влево */
+.HeadSlider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../img/Left_arrow.png) 0 0 /100% no-repeat;
+}
+/* Стрелка вправо */
+.HeadSlider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../img/Right_arrow.png) 0 0 /100% no-repeat;
+}
+/* Стрелка не активная */
+.HeadSlider .slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.HeadSlider .slick-dots{
+    min-width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4,40px);
+    column-gap: 10px;
+    justify-content: center;
+    bottom: 5%;
+}
+.HeadSlider .slick-dots li{    
+    font-size: 0px;
+    list-style: none;
+}
+/* Активная точка */
+
+/* Элемент точки */
+.HeadSlider .slick-dots li button{
+    border: none;    
+    font-size: 0px;
+    width: 40px;
+    height: 8px;
+    border-radius: 10%;
+}
+
+.HeadSlider .slick-dots li.slick-active button{
+    background-color: rgb(110, 185, 204);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10%; 
+}
+
+
+/*Табы*/
+
+.tabs_body{
+    display: grid;
+    grid-template-areas: 
+    "Navigation"
+    "slider";
+}
+
+/* Слайдер */
+.tabs_body .slick-slider{
+}
+/* Слайдер запущен */
+.tabs_body .slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.tabs_body .slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.tabs_body .slick-list {
+    grid-area: slider;
+    grid-row: 2/3;
+    overflow: hidden;
+}
+/* Лента слайдов */
+.tabs_body .slick-track{
+    
+    display: flex;
+}
+/* Слайд */
+.tabs_body .slick-slide{}
+/* Слайд активный (показывается) */
+.tabs_body .slick-slide.slick-active{}
+/* Слайд основной */
+.tabs_body .slick-slide.slick-current{}
+/* Слайд по центру */
+.tabs_body .slick-slide.slick-center{}
+/* Клонированный слайд */
+.tabs_body .slick-slide.slick-cloned{}
+/* Стрелка */
+.tabs_body .slick-arrow{}
+/* Стрелка влево */
+.tabs_body .slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.tabs_body .slick-arrow.slick-next{}
+/* Стрелка не активная */
+.tabs_body .slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.tabs_body .slick-dots{
+    grid-area: Navigation;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+}
+
+.tabs_body ul>li:nth-child(1)>button:after{
+    max-width: 100%;
+    content: "Аутстаффинг";
+}
+.tabs_body ul>li:nth-child(2)>button:after{
+    content: "Мэнеджмент";
+}
+
+.tabs_body ul>li>button{
+    font-size: 25px;
+    height: 40px;
+    min-width: 95%;
+    font-family: Oswald;
+}
+.tabs_body ul>li:nth-child(2)>button{
+    content: "Мэнеджмент";
+}
+
+.slick-dots li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.tabs_body .slick-dots li.slick-active button{
+    background-color: rgb(112, 112, 112); 
+    color: white;   
+}
+
+/* Активная точка */
+.tabs_body .slick-dots li.slick-active{}
+/* Элемент точки */
+.tabs_body .slick-dots li button{
+    
+}

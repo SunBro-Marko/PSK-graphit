@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(320px,1080px) minmax(0,1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header header"
+    ". article ."
+    "footer footer footer";
+}
+
+header{
+    min-height: 60px;
+    grid-area: header;
+    background-color: #062635;
+}
+
+article{
+    grid-area: article;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: #062635;
+    color: white;
+}
+
+.MainGridCol{
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(320px,1080px) minmax(0,1fr);
+}
+
+.MainCol{
+    grid-column: 2/3;
+}
+
+.dg{
+    display: grid;
+}
+
+.clm-1{
+    grid-template-columns: minmax(320px,1080px);
+}
+
+.clm-2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    
+}
+
+.clm-3{
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+}
+
+.clm-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.r-gap20{
+    row-gap: 20px;
+}
+
+.Achivements{
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(210px,1fr) minmax(210px,1fr));
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.clm-6{
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    justify-items: center;
+    align-items:center;
+}
+
+.cbox{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.cbox-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar{
+    display: grid;
+    grid-template-columns: 290px 1fr;
+}
+
+.NavMenu{
+    padding: 0 10px;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: repeat(4,auto);
+    column-gap: 20px;
+}
+
+.NavElement{
+    min-width: content;
+    max-width: max-content;
+}
+
+.left{
+    grid-area: left;
+}
+
+.right{
+    grid-area:right;
+}
+
+
+.Connect>.container{
+    padding: 5px 20%;
+    display:grid;
+}
+
+.form-group{
+    padding: 5px;
+    display: grid;
+}
+
+@media (max-width: 860px) {
+.Navbar{
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+}
+
+.NavMenu{
+    padding: 10px;
+    row-gap: 10px;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit,minmax(175px, 1fr) minmax(185px, 1fr));
+}
+
+
+}

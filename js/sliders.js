@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $('.HeadSlider').slick({
+        arrows:true,
+        dots:true,
+        slidesToShow:1,
+        speed:1500,
+        autoplay:true,
+        autoplaySpeed:6000,
+    });
+})
+
+$(document).ready(function(){
+    $('.tabs_body').slick({
+        arrows:false,
+        dots:true,
+        slidesToShow:1,
+        speed:1500,
+        autoplay:true,
+        autoplaySpeed:6000,
+    });
+})
